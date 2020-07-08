@@ -1,0 +1,64 @@
+{
+  "Guid": "bb4c0d1d-ef2e-4cd2-966a-850b8f1a2829",
+  "Title": "Fetch_User_By_Id_66",
+  "Request": {
+    "Path": {
+      "Matchers": [
+        {
+          "Name": "WildcardMatcher",
+          "Pattern": "/interactionapi/SystemService.svc/User/search",
+          "IgnoreCase": false
+        }
+      ]
+    },
+    "Methods": [
+      "POST"
+    ],
+    "Body": {
+      "Matcher": {
+        "Name": "JsonMatcher",
+        "Pattern": {
+          "userSearchCriteria": {
+            "IncludeInactive": true,
+            "Id": "66"
+          },
+          "userReturnOptions": {
+            "IncludeContact": true,
+            "ContactReturnOptions": {
+              "ElectronicAddressFlags": "PrimaryEmail"
+            }
+          }
+        },
+        "IgnoreCase": false
+      }
+    }
+  },
+  "Response": {
+    "StatusCode": 200,
+    "BodyAsJson": {
+      "HttpStatusCode": 200,
+      "InformationItems": [],
+      "ErrorAdditionalText": "",
+      "ErrorCode": 0,
+      "ErrorFixSuggestion": "",
+      "ErrorFixSupportContact": "",
+      "ErrorParameters": null,
+      "ErrorText": "",
+      "RequestID": "494cc7fc-4de1-42cb-88bb-3c474b8b33df",
+      "ResponseTime": 31,
+      "HasNextPage": false,
+      "TotalCount": 0,
+      "Users": []
+    },
+    "Headers": {
+      "Content-Type": "application/json",
+      "Date": "Tue, 30 Jun 2020 22:32:19 GMT",
+      "Server": "Apache",
+      "Cache-Control": "no-cache",
+      "X-LN-IA-API-TOTAL-TIME": "46.8494",
+      "Persistent-Auth": "true",
+      "X-Powered-By": "ASP.NET",
+      "Vary": "Accept-Encoding"
+    }
+  }
+}

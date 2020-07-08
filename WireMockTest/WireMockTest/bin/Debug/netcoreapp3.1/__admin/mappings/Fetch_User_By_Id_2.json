@@ -1,0 +1,46 @@
+{
+  "Guid": "27b9e441-c8e2-48b9-ae45-4734e49696e3",
+  "Title": "Fetch_User_By_Id_2",
+  "Request": {
+    "Path": {
+      "Matchers": [
+        {
+          "Name": "WildcardMatcher",
+          "Pattern": "http://localhost:9095/interactionapi/SystemService.svc/User/search",
+          "IgnoreCase": false
+        }
+      ]
+    },
+    "Methods": [
+      "POST"
+    ],
+    "Response": {
+      "StatusCode": 200,
+      "BodyAsJson": {
+        "HttpStatusCode": 200,
+        "InformationItems": [],
+        "ErrorAdditionalText": "",
+        "ErrorCode": 0,
+        "ErrorFixSuggestion": "",
+        "ErrorFixSupportContact": "",
+        "ErrorParameters": null,
+        "ErrorText": "",
+        "RequestID": "1bad9edc-34be-429e-9a18-a46841b14c5c",
+        "ResponseTime": 0,
+        "HasNextPage": false,
+        "TotalCount": 0,
+        "Users": []
+      },
+      "Headers": {
+        "Content-Type": "application/json",
+        "Date": "Tue, 30 Jun 2020 23:08:23 GMT",
+        "Server": "Apache",
+        "Cache-Control": "no-cache",
+        "X-LN-IA-API-TOTAL-TIME": "15.6141",
+        "Persistent-Auth": "true",
+        "X-Powered-By": "ASP.NET",
+        "Vary": "Accept-Encoding"
+      }
+    }
+  }
+}
